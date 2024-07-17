@@ -6,7 +6,7 @@ const stat = statsconstants;
 const Stats = () => {
   return (
     <section>
-      <div className="continer mx-auto pt-10 lg:pt-0">
+      <div className="continer mx-auto py-10 lg:pt-0">
         <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
           {stat.map((stat, index) => {
             return (

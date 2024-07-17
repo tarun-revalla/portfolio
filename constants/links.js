@@ -1,9 +1,9 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export const linksconstants = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/resume", label: "Resume" },
+  { href: "/", label: "HOME" },
+  { href: "/about", label: "ABOUT" },
+  { href: "/resume", label: "RESUME" },
 ];
 
 export const socialconstants = [
@@ -11,7 +11,6 @@ export const socialconstants = [
   { href: "https://x.com/____tarun", icon: <FaTwitter /> },
   { href: "https://www.linkedin.com/in/revalla-tarun/", icon: <FaLinkedin /> },
 ];
-
 
 export const statsconstants = [
   { label: "Projects", value: "10" },

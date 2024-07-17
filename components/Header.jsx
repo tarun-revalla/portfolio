@@ -6,7 +6,7 @@ import DarkModeToggle from "./Darkmodetoggle";
 
 const Header = () => {
   return (
-    <header className="py-4 xl:py-5 text-white dark:text-black transition-all duration-180">
+    <header className="py-4 xl:py-5 text-white dark:text-black transition-all duration-180 z-50">
       <div className="container mx-auto flex justify-between items-center ">
         <Link href="/">
           <h1 className="text-4xl font-semibold px-4">

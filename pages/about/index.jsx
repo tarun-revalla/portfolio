@@ -19,23 +19,28 @@ const about = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-4 md:mt-14 bg-gradient-to-br from-[--text-color] to-slate-500 py-0 md:py-4 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-3xl "
+          className="mt-4 md:mt-3 lg:mt-14 bg-gradient-to-br from-[--text-color] to-slate-600 py-0 md:py-4 bg-clip-text text-center text-xl font-medium  md:text-transparent lg:text-base tracking-tight md:text-4xl"
         >
-          <span className="text-[--bg-color] font-bold">
-            Full-stack excellence
-          </span>
-          <br />
-          <br />
-          Transforming ideas into <FlipWords
-            words={words}
-            duration={4000}
-          />{" "}
-          solutions.
-          <br />
-          <br />
-          Architecting visions into{" "}
-          <FlipWords words={words2} startDelay={2000} duration={4000} />{" "}
-          realities.
+          <div className=" lg:mt-[-270px] mt-[-30px] xl:mt-[0px]">
+            <span className="text-[--bg-color] font-bold text-xl md:text-4xl py-2">
+              Full-stack excellence
+            </span>
+            <br />
+            <br />
+            <div className="text-sm md:text-xl">
+              Transforming ideas into{" "}
+              <FlipWords words={words} duration={4000} /> solutions.
+              <br />
+              <br />
+              Architecting visions into{" "}
+              <FlipWords
+                words={words2}
+                startDelay={2000}
+                duration={4000}
+              />{" "}
+              realities.
+            </div>
+          </div>
         </motion.h1>
       </LampContainer>
     </Stairs>

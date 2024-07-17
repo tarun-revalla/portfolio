@@ -27,6 +27,14 @@ module.exports = {
         primary: "var(--color-primary)",
         accent: "var(--color-accent)",
       },
+      margin: {
+        '-20': '-20px',
+        '-50': '-50px',
+        '-100': '-100px',
+        '-150': '-150px',
+        '-200': '-200px',
+        '-220': '-220px',
+      },
       transitionProperty: {
         colors: "background-color, border-color, color, fill, stroke",
         bg: "background-color",
