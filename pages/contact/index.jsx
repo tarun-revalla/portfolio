@@ -18,6 +18,11 @@ const IntroText = () => (
     <p className="mt-4 text-xs text-white/70 dark:text-black/70">
       you can play with this globe
     </p>
+    <p className="mt-4 text-xs text-white/70 dark:text-black/70">
+      <a href='#form' className='text-accent'>
+        Click here
+      </a>
+    </p>
   </motion.div>
 );
 
@@ -101,12 +106,12 @@ const ContactForm = () => {
       <h2 className="text-center text-xl md:text-3xl font-bold text-[--text-color] mb-6">
         Let&apos;s get to know each other
       </h2>
-      <form onSubmit={handleSubmit} ref={formRef} className="space-y-4 mb-4">
+      <form id='form' onSubmit={handleSubmit} ref={formRef} className="space-y-4 mb-4">
         <input
           ref={input1Ref}
           type="text"
-          placeholder="Name"
-          className="w-full h-3 rounded-xl border-2 border-gray-300 p-4 text-[--text-color] focus:border-none bg-[--bg-color] transition-all duration-300"
+          placeholder="Whats your name?"
+          className="w-full h-3 rounded-xl  p-5 placeholder-[--text-color] text-[--text-color] bg-[#181818] dark:bg-[#afafaf] focus:border-none  transition-all duration-300"
           name="name"
           value={form.name}
           onKeyDown={(event) => handleKeyDown(event, input2Ref)}
@@ -117,7 +122,7 @@ const ContactForm = () => {
           ref={input2Ref}
           type="email"
           placeholder="Email"
-          className="w-full h-3 rounded-xl border-2 border-gray-300 p-4 text-[--text-color] bg-[--bg-color] focus:border-none transition-all duration-300"
+          className="w-full h-3 rounded-xl  p-5 placeholder-[--text-color] text-[--text-color] bg-[#181818] dark:bg-[#afafaf] focus:border-none transition-all duration-300"
           name="email"
           value={form.email}
           onKeyDown={(event) => handleKeyDown(event, input3Ref)}
@@ -127,7 +132,7 @@ const ContactForm = () => {
         <textarea
           ref={input3Ref}
           placeholder="Message"
-          className="w-full rounded-xl border-2 border-gray-300 p-4 text-[--text-color] bg-[--bg-color] focus:border-none h-32 transition-all duration-300"
+          className="w-full rounded-xl  p-5 placeholder-[--text-color] text-[--text-color] bg-[#181818] dark:bg-[#afafaf] focus:border-none h-32 transition-all duration-300"
           name="message"
           value={form.message}
           onChange={handleChange}
@@ -136,7 +141,7 @@ const ContactForm = () => {
         ></textarea>
         <button
           type="submit"
-          className="w-full rounded-lg bg-accent p-4 text-[--bg-color] font-semibold hover:bg-accent-dark transition-all hover:scale-105 duration-300"
+          className="w-full rounded-lg bg-accent p-4 text-black font-semibold hover:bg-accent-dark transition-all hover:scale-105 duration-300"
           disabled={loading}
         >
           {loading ? "Sending..." : "Send"}

@@ -398,9 +398,9 @@ export function GlobeDemo() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center pt-20 h-screen md:h-auto bg-[--bg-color] relative w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-[--bg-color] z-10" />
+    <div className="flex flex-col items-center justify-center pt-20 h-screen w-full relative overflow-auto touch-action:pan-y;">
+      <div className="relative w-full max-w-7xl h-full md:h-[40rem] px-4">
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[--bg-color] z-10 pointer-events-none select-none" />
         <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
     </div>

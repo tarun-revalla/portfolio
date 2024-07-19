@@ -66,9 +66,9 @@ const Custom404 = () => {
                 Page not found
               </motion.p>
               <motion.p variants={itemVariants} className="mb-8">
-                The page you&apos;re looking for doesn&apos;t exist or
-                isn&apos;t published yet. any way, you can go back to the home
-                page.
+                The page you&apos;re looking for doesn&apos;t exist <br /> or{" "}
+                <br />
+                is under cooking
               </motion.p>
               <Link href="/">
                 <motion.a

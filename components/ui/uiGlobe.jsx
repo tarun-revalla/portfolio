@@ -8,7 +8,7 @@ import countries from "../globe.json";
 
 extend({ ThreeGlobe });
 
-const RING_PROPAGATION_SPEED = 3;
+const RING_PROPAGATION_SPEED = 4;
 const aspect = 1.2;
 const cameraZ = 300;
 
@@ -26,7 +26,7 @@ export function Globe({ globeConfig, data }) {
       atmosphereAltitude: 0.1,
       polygonColor: "rgba(255,255,255,0.7)",
       globeColor: "#1d072e",
-      emissive: "#1C00ff00",
+      emissive: "#000000",
       emissiveIntensity: 0.1,
       shininess: 0.9,
       arcTime: 2000,
@@ -181,7 +181,7 @@ export function WebGLRendererConfig() {
   useEffect(() => {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
-    gl.setClearColor(0x000000, 0);
+    gl.setClearColor(0x000000, 0); // Here is the transparency configuration
   }, [gl, size.height, size.width]);
 
   return null;
@@ -192,8 +192,12 @@ export function World(props) {
   const scene = new Scene();
   scene.fog = new Fog(0xffffff, 400, 2000);
   return (
-    <Canvas  scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}
-    style={{ backgroundColor: 'transparent' }}>
+    <Canvas
+      scene={scene}
+      camera={new PerspectiveCamera(50, aspect, 180, 1800)}
+      style={{ backgroundColor: "transparent", width: "100%", height: "100%" }}
+      gl={{ alpha: true }}
+    >
       <WebGLRendererConfig />
       <ambientLight color={globeConfig.ambientLight} intensity={0.6} />
       <directionalLight
