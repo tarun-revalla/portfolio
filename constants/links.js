@@ -2,9 +2,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaTwitter,
-  RiHome2Line,
-  MdOutlineDesignServices,
-  LuMessageSquare,
 } from "react-icons/fa";
 
 export const linksconstants = [
@@ -13,27 +10,6 @@ export const linksconstants = [
   { href: "/resume", label: "Resume" },
 ];
 
-export const navItems = [
-  {
-    name: "Home",
-    link: "/",
-    icon: <RiHome2Line className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-  {
-    name: "About",
-    link: "/about",
-    icon: (
-      <MdOutlineDesignServices className="h-4 w-4 text-neutral-500 dark:text-white" />
-    ),
-  },
-  {
-    name: "Contact",
-    link: "/contact",
-    icon: (
-      <LuMessageSquare className="h-4 w-4 text-neutral-500 dark:text-white" />
-    ),
-  },
-];
 
 export const socialconstants = [
   { href: "https://github.com/tarun-revalla", icon: <FaGithub /> },
