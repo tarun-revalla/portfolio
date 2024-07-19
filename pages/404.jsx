@@ -4,6 +4,7 @@ import { ArrowLeft, Frown, Loader } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Stairs from "../components/Layout/Stairs";
+import FloatNavbar from "../components/FloatNavbar";
 
 const Custom404 = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +41,7 @@ const Custom404 = () => {
 
   return (
     <Stairs>
+      <FloatNavbar />
     <div className="flex items-center justify-center min-h-screen bg-[--bg-color]">
       {isLoading ? (
         <Loader className="w-16 h-16 text-[--text-color] animate-spin" />

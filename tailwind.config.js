@@ -16,6 +16,7 @@ module.exports = {
     screens: {
       sm: "640px",
       md: "768px",
+      tt: "820px",
       lg: "1024px",
       xl: "1280px",
     },
@@ -28,12 +29,12 @@ module.exports = {
         accent: "var(--color-accent)",
       },
       margin: {
-        '-20': '-20px',
-        '-50': '-50px',
-        '-100': '-100px',
-        '-150': '-150px',
-        '-200': '-200px',
-        '-220': '-220px',
+        "-20": "-20px",
+        "-50": "-50px",
+        "-100": "-100px",
+        "-150": "-150px",
+        "-200": "-200px",
+        "-220": "-220px",
       },
       transitionProperty: {
         colors: "background-color, border-color, color, fill, stroke",

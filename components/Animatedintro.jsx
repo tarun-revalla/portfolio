@@ -22,7 +22,7 @@ const AnimatedIntro = () => {
 
     gsap.to(nameRef.current, {
         duration: 1.0,
-        text: "Revalla Tarun",
+        text: "Tarun",
         delay: 1.0, 
         ease: "none"
       });
@@ -37,7 +37,7 @@ const AnimatedIntro = () => {
     gsap.to(descriptionRef.current, {
       duration: 2.5,
       text: "I excel at crafting digital experiences and I am proficient in various programming languages and technologies.",
-      delay: 4, // Start after the name animation
+      delay: 7, // Start after the name animation
       ease: "none"
     });
   }, []);

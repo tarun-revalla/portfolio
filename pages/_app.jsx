@@ -24,7 +24,7 @@ export default function App({ Component, pageProps, router }) {
         }
       `}</style>
       <ThemeProvider enableSystem={true} attribute="class">
-        <Header />
+        
         <Component key={router.route} {...pageProps} />
       </ThemeProvider>
     </div>

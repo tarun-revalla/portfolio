@@ -1,9 +1,38 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  RiHome2Line,
+  MdOutlineDesignServices,
+  LuMessageSquare,
+} from "react-icons/fa";
 
 export const linksconstants = [
-  { href: "/", label: "HOME" },
-  { href: "/about", label: "ABOUT" },
-  { href: "/resume", label: "RESUME" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/resume", label: "Resume" },
+];
+
+export const navItems = [
+  {
+    name: "Home",
+    link: "/",
+    icon: <RiHome2Line className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "About",
+    link: "/about",
+    icon: (
+      <MdOutlineDesignServices className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+    icon: (
+      <LuMessageSquare className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
+  },
 ];
 
 export const socialconstants = [
@@ -17,4 +46,32 @@ export const statsconstants = [
   { label: "Hours", value: "300" },
   { label: "Languages", value: "10" },
   { label: "commits", value: "600" },
+];
+
+export const servicesconstants = [
+  {
+    num: "01",
+    title: "Web Development",
+    description:
+      "Building responsive and dynamic websites tailored to your needs.",
+    href: "/",
+  },
+  {
+    num: "02",
+    title: "UI/UX Design",
+    description: "Crafting intuitive and engaging user experiences.",
+    href: "/",
+  },
+  {
+    num: "03",
+    title: "Logo Design",
+    description: "Creating memorable and impactful brand identities.",
+    href: "/",
+  },
+  {
+    num: "04",
+    title: "SEO",
+    description: "Optimizing your online presence for maximum visibility.",
+    href: "/",
+  },
 ];

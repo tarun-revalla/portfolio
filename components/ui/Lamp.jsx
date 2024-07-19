@@ -35,6 +35,7 @@ export const LampContainer = ({ children, className }) => {
   const whileInViewWidth2 = isLargeScreen ? "15rem" : "8rem";
 
   return (
+    
     <div
       className={cn(
         "relative flex min-h-[78vh] xl:min-h-screen flex-col items-center justify-center overflow-hidden bg-[--bg-color] w-full rounded-md z-0 pt-20"

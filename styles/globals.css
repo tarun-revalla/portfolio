@@ -39,6 +39,7 @@
   font-family: var(--font-jetbrains-mono);
 }
 
+
 html {
   transition: background-color 0.3s, color 0.3s;
   overflow-x: hidden;

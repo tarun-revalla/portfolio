@@ -24,34 +24,22 @@ const Photo = () => {
 
       // Animate elements sequentially
       timeline
-        .from("#Character", {
-          opacity: 0,
-          scale: 0.5,
-          duration: 1,
-          ease: "easeInOut",
-        })
-        .from("#Device", {
-          opacity: 0,
-          scale: 0.5,
-          duration: 1,
-          ease: "easeInOut",
-        })
-
-        .from("#Coffee", {
-          opacity: 0,
-          scale: 0.5,
-          duration: 1,
-          ease: "easeInOut",
-        })
         .from(
-          "#window1-low",
+          "#Coffee",
           {
             opacity: 0,
             scale: 0.5,
             duration: 1,
             ease: "easeInOut",
-          }
+          },
+          "=1"
         )
+        .from("#window1-low", {
+          opacity: 0,
+          scale: 0.5,
+          duration: 1,
+          ease: "easeInOut",
+        })
 
         .from("#gear7", {
           opacity: 0,
@@ -134,22 +122,23 @@ const Photo = () => {
           "-=8.5"
         )
 
-        .from("#gear2", {
-          opacity: 0,
-          scale: 0.5,
-          duration: 1,
-          ease: "easeInOut",
-        },"-=5")
-        .to(
+        .from(
           "#gear2",
           {
-            rotation: -360,
-            transformOrigin: "center",
-            repeat: -1,
-            ease: "linear",
-            duration: 9,
-          }
+            opacity: 0,
+            scale: 0.5,
+            duration: 1,
+            ease: "easeInOut",
+          },
+          "-=5"
         )
+        .to("#gear2", {
+          rotation: -360,
+          transformOrigin: "center",
+          repeat: -1,
+          ease: "linear",
+          duration: 9,
+        })
 
         .from("#gear6", {
           opacity: 0,
@@ -197,28 +186,33 @@ const Photo = () => {
           },
           "-=9.5"
         )
-        .from("#gear3", {
-          opacity: 0,
-          scale: 0.5,
-          duration: 1,
-          ease: "easeInOut",
-        },"-=2")
-        .to(
+        .from(
           "#gear3",
           {
-            rotation: 360,
-            transformOrigin: "center",
-            repeat: -1,
-            ease: "linear",
-            duration: 8,
-          }
+            opacity: 0,
+            scale: 0.5,
+            duration: 1,
+            ease: "easeInOut",
+          },
+          "-=2"
         )
-        .from("#js", {
-          opacity: 0,
-          scale: 0.5,
-          duration: 1,
-          ease: "easeInOut",
-        },"-=8")
+        .to("#gear3", {
+          rotation: 360,
+          transformOrigin: "center",
+          repeat: -1,
+          ease: "linear",
+          duration: 8,
+        })
+        .from(
+          "#js",
+          {
+            opacity: 0,
+            scale: 0.5,
+            duration: 1,
+            ease: "easeInOut",
+          },
+          "-=8"
+        );
     };
 
     loadSVG();
@@ -231,12 +225,12 @@ const Photo = () => {
         animate={{
           opacity: 1,
           scale: 1,
-          transition: { duration: 1, delay: 2.0, ease: "easeInOut" },
+          transition: { duration: 1, delay:0, ease: "easeInOut" },
         }}
       >
         <div
           id="svg-container"
-          className="w-[320px] h-[320px] md:w-[425px] md:h-[425px] xl:w-[530px] xl:h-[530px] translate-x-4"
+          className="w-[320px] h-[320px] md:w-[425px] md:h-[425px] xl:w-[530px] xl:h-[530px] translate-x-4 translate-y-6"
         ></div>
       </motion.div>
     </div>
