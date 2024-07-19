@@ -4,6 +4,7 @@ import Stairs from "../../components/Layout/Stairs";
 import { GlobeDemo } from "../../components/Globeres";
 import { motion } from "framer-motion";
 import StarsCanvas from "../../components/Stars";
+import { TbArrowMoveUp } from "react-icons/tb";
 
 const IntroText = () => (
   <motion.div
@@ -13,13 +14,14 @@ const IntroText = () => (
     className="text-center mb-8 lg:mb-12"
   >
     <p className="text-xl md:text-4xl font-bold text-[--text-color]">
-      No passport required <br /> just bring your ideas <br /> let&apos;s connect worldwide !
+      No passport required <br /> just bring your ideas <br /> let&apos;s
+      connect worldwide !
     </p>
     <p className="mt-4 text-xs text-white/70 dark:text-black/70">
       you can play with this globe
     </p>
     <p className="mt-4 text-xs text-white/70 dark:text-black/70">
-      <a href='#form' className='text-accent'>
+      <a href="#form" className="text-accent">
         Click here
       </a>
     </p>
@@ -101,12 +103,27 @@ const ContactForm = () => {
     setForm((prevForm) => ({ ...prevForm, [name]: value }));
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: -20, behavior: "smooth" });
+  };
+
   return (
     <div className="w-full lg:w-1/2 max-w-[500px] order-2 lg:order-1 translate-y-40 lg:translate-y-0">
+      <p className="text-center flex lg:hidden  my-3 justify-center">
+        <TbArrowMoveUp
+          onClick={scrollToTop}
+          className="text-accent cursor-pointer text-4xl"
+        />
+      </p>
       <h2 className="text-center text-xl md:text-3xl font-bold text-[--text-color] mb-6">
         Let&apos;s get to know each other
       </h2>
-      <form id='form' onSubmit={handleSubmit} ref={formRef} className="space-y-4 mb-4">
+      <form
+        id="form"
+        onSubmit={handleSubmit}
+        ref={formRef}
+        className="space-y-4 mb-4"
+      >
         <input
           ref={input1Ref}
           type="text"
