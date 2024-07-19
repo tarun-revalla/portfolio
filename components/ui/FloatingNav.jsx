@@ -95,7 +95,7 @@ export const FloatingNav = ({ navItems, className }) => {
           ))}
           <DarkModeToggle />
           <Link href="/contact">
-            <button className="border text-sm font-medium border-accent px-4 py-2 rounded-full flex items-center justify-center hover:scale-110 hover:bg-accent hover:text-primary transistion-all duration-500">
+            <button className="border text-sm font-medium border-accent px-4 py-2 rounded-full flex items-center justify-center hover:scale-110 hover:bg-accent hover:opacity-50 hover:text-[--text-color] transistion-all duration-500">
               <span className="hidden sm:block">Contact me</span>
               <span className="block sm:hidden">
                 <IconMessage className="h-4 w-4 text-[--text-color]" />
