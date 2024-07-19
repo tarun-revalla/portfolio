@@ -19,7 +19,7 @@ const Home = () => {
               <div className="flex flex-col xl:flex-row items-center justify-between sm:pt-15 pt-5 lg:pt-32 xl:pt-10 xl:pb-10 ">
                 <div className="text-center xl:text-left xl:mb-13 order-2 xl:order-none">
                   <Animatedintro />
-                  <div className="flex flex-col items-center xl:flex-row xl:items-start xl:gap-8">
+                  <div className="flex flex-col items-center xl:flex-row xl:items-start xl:gap-8 lg:pl-4">
                     <DownloadButton
                       fileName="tarun_resume_dev.pdf"
                       buttonText="Download CV"
