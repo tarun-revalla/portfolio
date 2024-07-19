@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import StarsCanvas from "../../components/Stars";
 import { TbArrowMoveUp } from "react-icons/tb";
 
+
 const IntroText = () => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
@@ -14,8 +15,7 @@ const IntroText = () => (
     className="text-center mb-8 lg:mb-12"
   >
     <p className="text-xl md:text-4xl font-bold text-[--text-color]">
-      No passport required <br /> just bring your ideas <br /> let&apos;s
-      connect worldwide !
+      No passport required <br /> just bring your ideas <br /> let&apos;s connect worldwide !
     </p>
     <p className="mt-4 text-xs text-white/70 dark:text-black/70">
       you can play with this globe
@@ -124,6 +124,7 @@ const ContactForm = () => {
         ref={formRef}
         className="space-y-4 mb-4"
       >
+
         <input
           ref={input1Ref}
           type="text"
