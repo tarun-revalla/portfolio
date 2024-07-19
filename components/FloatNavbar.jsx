@@ -22,7 +22,7 @@ const navItems = [
   {
     name: "Services",
     link: "/services",
-    icon: <IconCodeCircle2 stroke={1} className="h-5 w-5 text-[--text-color]" />,
+    icon: <IconCodeCircle2 className="h-5 w-5 text-[--text-color]" />,
   },
 ];
 
