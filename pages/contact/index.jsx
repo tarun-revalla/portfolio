@@ -28,26 +28,10 @@ const IntroText = () => (
   </motion.div>
 );
 
-const GlobeSection = ({ delayTime = 2000 }) => {
-  const [showGlobe, setShowGlobe] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowGlobe(true);
-    }, delayTime);
-
-    return () => clearTimeout(timer);
-  }, [delayTime]);
-
+const GlobeSection = () => {
   return (
     <div className="w-full lg:w-1/2 aspect-square min-w-[550px] max-w-[700px] order-1 lg:order-2">
-      {showGlobe ? (
         <GlobeDemo />
-      ) : (
-        <div className="w-full h-full flex items-center justify-center">
-          <p className="text-[--text-color]">.</p>
-        </div>
-      )}
     </div>
   );
 };
