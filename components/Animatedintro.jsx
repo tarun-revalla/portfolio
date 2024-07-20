@@ -53,7 +53,7 @@ const AnimatedIntro = () => {
         <span className="text-[--text-color]" ref={nameRef}></span>
       </h1>
       <p
-        className="max-w-[490px] mx-auto md:mb-9 mb-5 dark:text-black text-white/80 xl:mx-0"
+        className="max-w-[490px] md:mb-9 mb-5 mx-2 dark:text-black text-white/80 xl:mx-0"
         ref={descriptionRef}
       >
       </p>

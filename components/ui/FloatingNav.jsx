@@ -45,10 +45,10 @@ export const FloatingNav = ({ navItems, className }) => {
       <motion.div
         initial={{
           opacity: 1,
-          y: 0,
+          y: 14,
         }}
         animate={{
-          y: visible ? 0 : -100,
+          y: visible ? 14 : -100,
           opacity: visible ? 1 : 0,
           duration: 1,
           ease: "easeInOut",

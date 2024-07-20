@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import FloatNavBar from "../../components/FloatNavbar";
 import Stairs from "../../components/Layout/Stairs";
 import { GlobeDemo } from "../../components/Globeres";
@@ -28,10 +28,28 @@ const IntroText = () => (
   </motion.div>
 );
 
-const GlobeSection = () => {
+const GlobeSection = ({ delayTime = 2000 }) => {
+  const [showGlobe, setShowGlobe] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowGlobe(true);
+    }, delayTime);
+
+    return () => clearTimeout(timer);
+  }, [delayTime]);
+
+  const globeComponent = useMemo(() => <GlobeDemo />, []);
+
   return (
     <div className="w-full lg:w-1/2 aspect-square min-w-[550px] max-w-[700px] order-1 lg:order-2">
-        <GlobeDemo />
+      {showGlobe ? (
+        globeComponent
+      ) : (
+        <div className="w-full h-full flex items-center justify-center">
+          <p className="text-[--text-color]">.</p>
+        </div>
+      )}
     </div>
   );
 };
@@ -92,7 +110,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full lg:w-1/2 max-w-[500px] order-2 lg:order-1 translate-y-40 lg:translate-y-0">
+    <div className="w-full lg:w-1/2 max-w-[500px] order-2 lg:order-1 translate-y-40 pb-20 lg:py-20 lg:translate-y-0">
+      <div className="justify-center items-center flex flex-col max-h-[450px]" > 
       <p className="text-center flex lg:hidden  my-3 justify-center">
         <TbArrowMoveUp
           onClick={scrollToTop}
@@ -149,6 +168,7 @@ const ContactForm = () => {
           {loading ? "Sending..." : "Send"}
         </button>
       </form>
+      </div>
     </div>
   );
 };
@@ -160,7 +180,7 @@ const Index = () => {
       <Stairs>
         <div className="flex-grow flex flex-col items-center justify-start pt-20 px-4 lg:px-8">
           <IntroText />
-          <div className="w-full max-w-7xl flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-16">
+          <div className="w-full max-w-7xl flex flex-col lg:flex-row justify-center lg:items-start items-center gap-4 lg:gap-16">
             <StarsCanvas />
             <GlobeSection />
             <ContactForm />
