@@ -4,20 +4,28 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Fullstack excelence" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="mask-icon" href="/icons/mask-icon.svg" color="#FFFFFF" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="apple-touch-icon" href="/icons/touch-icon-iphone.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/icons/touch-icon-ipad.png"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/icons/touch-icon-iphone-retina.png"
         />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/icons/site.webmanifest" />
         <link
-          rel="mask-icon"
-          href="/safari-pinned-tab.svg"
-          color="#5bbad5"
+          rel="apple-touch-icon"
+          sizes="167x167"
+          href="/icons/touch-icon-ipad-retina.png"
         />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#000000" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <body>
         <Main />
