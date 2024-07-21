@@ -110,7 +110,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full lg:w-1/2 max-w-[500px] order-2 lg:order-1 translate-y-40 pb-20 lg:py-20 lg:translate-y-0">
+    <div className="w-full lg:w-1/2 max-w-[500px] order-2 lg:order-1 translate-y-40 pb-10 lg:py-20 lg:translate-y-0">
       <div className="justify-center items-center flex flex-col max-h-[450px]" > 
       <p className="text-center flex lg:hidden  my-3 justify-center">
         <TbArrowMoveUp
@@ -125,7 +125,7 @@ const ContactForm = () => {
         id="form"
         onSubmit={handleSubmit}
         ref={formRef}
-        className="space-y-4 mb-4"
+        className="space-y-4 mb-3"
       >
 
         <input
