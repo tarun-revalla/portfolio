@@ -17,7 +17,7 @@ const Home = () => {
           <section id="homepage" className="h-full transition-all duration-500">
             <div className="container mx-auto h-auto">
               <div className="flex flex-col xl:flex-row items-center justify-between sm:pt-15 pt-5 lg:pt-32 xl:pt-10 xl:pb-10 ">
-                <div className="text-center xl:text-left xl:mb-13 order-2 xl:order-none">
+                <div className="text-center xl:text-left xl:mb-13 order-2 xl:order-none lg:mt-14">
                   <Animatedintro />
                   <div className="flex flex-col items-center xl:flex-row xl:items-start xl:gap-8 lg:pl-4">
                     <DownloadButton

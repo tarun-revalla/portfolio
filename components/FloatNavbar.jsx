@@ -27,7 +27,9 @@ const navItems = [
 ];
 
 const FloatNavbar = () => {
-  return <FloatingNav navItems={navItems} className={"relative  w-full"} />;
+  return <div className="px-10">
+  <FloatingNav navItems={navItems} className={"relative  w-full"} />
+  </div>;
 };
 
 export default FloatNavbar;
