@@ -4,26 +4,16 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+        <meta name="apple-mobile-web-app-title" content="Tarun Revalla" />
+        <meta name="application-name" content="Tarun Revalla" />
+        <meta name="msapplication-TileColor" content="#000000" />
         <meta name="description" content="Fullstack excelence" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="mask-icon" href="/icons/mask-icon.svg" color="#FFFFFF" />
         <meta name="theme-color" content="var(--bg-color)" />
-        <link rel="apple-touch-icon" href="/icons/touch-icon-iphone.png" />
-        <link
-          rel="apple-touch-icon"
-          sizes="152x152"
-          href="/icons/touch-icon-ipad.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/icons/touch-icon-iphone-retina.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="167x167"
-          href="/icons/touch-icon-ipad-retina.png"
-        />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <body>
