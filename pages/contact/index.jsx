@@ -125,8 +125,7 @@ const ContactForm = () => {
         id="form"
         onSubmit={handleSubmit}
         ref={formRef}
-        className="space-y-4 mb-3"
-      >
+        className="space-y-4 mb-3" >
 
         <input
           ref={input1Ref}
