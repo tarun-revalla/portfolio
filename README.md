@@ -1,40 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Revalla Tarun's Portfolio
 
-## Getting Started
+Welcome to my portfolio! I am a passionate Software Engineer specializing in developing robust and scalable applications. This website showcases my skills, experience, projects, and contact information.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About Me](#about-me)
+- [Experience](#experience)
+- [Education](#education)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+I am a Software Engineer with a strong background in both front-end and back-end development. I am currently working at Turing, where I contribute to building scalable web applications. My goal is to leverage technology to solve real-world problems and create impactful solutions.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Experience
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Associate Software Engineer at Napier Health Care
+**Dates:** Aug 2023 - Present  
+**Location:** Hyderabad,India
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Enhanced Performance: Achieved a 40% increase in performance across over 140 business transactions by implementing caching mechanisms, optimizing database queries, and eliminating redundant API calls.
+- Improved Code Security: Reduced Static Code Analysis (SCA) issues from 24 to 4 within one month, significantly enhancing the overall security of the codebase.
+- Defect Resolution: Successfully resolved over 100 defects and issues across both frontend and backend components, ensuring a robust and reliable application.
+- User Story Engineering: Engineered comprehensive user stories for feature development, ensuring precise alignment with user requirements and driving successful project outcomes.
+- API Development: Designed and implemented RESTful APIs for seamless integration with other services, facilitating smooth and efficient communication between systems.
+- Auditing Implementation: Implemented auditing for over 20 business transactions, ensuring compliance and traceability within the application.
 
-## Learn More
+### FullStack Developer Intern at SoclarSecure Solutions
+**Dates:** Jun 2022 - Aug 2022  
+**Location:** Remote
 
-To learn more about Next.js, take a look at the following resources:
+During my internship at Solar Secure Solutions, I contributed to the development of web applications by:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Developing and maintaining both frontend and backend components.
+- Implementing responsive UI designs and optimizing user experience.
+- Integrating RESTful APIs for seamless functionality.
+- Collaborating with cross-functional teams to deliver high-quality software solutions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Education
 
-## Deploy on Vercel
+**Bachelor of Technology (B.Tech) in Computer Science**  
+**Institution:** National Institute of Technology Meghalaya  
+**Dates:** 2019 - 2023  
+**Achievements:** Graduated with First Class Honors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Skills
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Languages:** Python, Java, JavaScript, SQL
+- **Frameworks:** AngularJS, React, JUnit, Spring, Spring Boot, Next Js
+- **Tools:** Git, Docker, Maven, Jenkins
+- **Web Technologies:** HTML, CSS, RESTful APIs
+- **Databases:** MongoDB, PostgreSQL
+
+## Projects
+
+### Inventory Management System
+- Developed a web application to manage inventory and sales tracking.
+- Technologies used: React, Node.js, MongoDB.
+
+### E-commerce Platform
+- Created a scalable e-commerce platform with payment integration.
+- Technologies used: Java, Spring Boot, MySQL.
+
+### Real-time Chat Application
+- Built a chat application with real-time messaging capabilities.
+- Technologies used: Angular, Node.js, Socket.io.
+
+## Contact
+
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/revalla-tarun/)
+- **Portfolio:** [tarun.com](https://tarunrevalla.vercel.app/)
+
+Feel free to reach out to me for any opportunities or collaborations!
