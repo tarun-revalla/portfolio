@@ -27,15 +27,8 @@ const DarkModeToggle = () => {
   const handleThemeToggle = () => {
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-
-    // Save the selected theme to local storage
     localStorage.setItem("theme", newTheme);
 
-    // Trigger the ripple effect
-    const ripple = rippleRef.current;
-    ripple.classList.remove("active");
-    void ripple.offsetWidth; // trigger reflow
-    ripple.classList.add("active");
   };
 
   return (
