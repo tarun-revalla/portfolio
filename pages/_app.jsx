@@ -1,7 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import "../styles/globals.css";
-import Header from "../components/Header";
 import { ThemeProvider } from "next-themes";
+import Cursor from "../components/Cursor";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -24,7 +24,7 @@ export default function App({ Component, pageProps, router }) {
         }
       `}</style>
       <ThemeProvider enableSystem={true} attribute="class">
-        
+        <Cursor />
         <Component key={router.route} {...pageProps} />
       </ThemeProvider>
     </div>
