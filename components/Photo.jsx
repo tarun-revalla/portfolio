@@ -36,7 +36,7 @@ const Photo = memo(() => {
     } catch (error) {
       console.error("Error loading SVG:", error);
     }
-  }, [applyTheme]);
+  }, [applyTheme,animateSVG]);
 
   const animateSVG = useCallback(() => {
     const timeline = gsap.timeline();
