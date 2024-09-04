@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { TextPlugin } from "gsap/dist/TextPlugin";
+import HyperText from './ui/HyperText';
 
 gsap.registerPlugin(TextPlugin);
 
@@ -17,13 +18,6 @@ const AnimatedIntro = () => {
         duration: 0.2,
         text: "I'm",
         delay: 0.7, 
-        ease: "none"
-      });
-
-    gsap.to(nameRef.current, {
-        duration: 1.0,
-        text: "Tarun",
-        delay: 1.0, 
         ease: "none"
       });
 
@@ -50,10 +44,10 @@ const AnimatedIntro = () => {
         <br />
         <span className="md:h1 h2  mb-3 md:mb-6 text-[--text-color]" ref={iamref}></span>
         <br />
-        <span className="text-[--text-color]" ref={nameRef}></span>
+        <span className="flex flex-col items-center justify-center md:mb-6 text-[--text-color]"><HyperText text="Tarun Revalla"></HyperText></span>
       </h1>
       <p
-        className="max-w-[490px] md:mb-9 mb-5 mx-2 dark:text-black text-white/80 xl:mx-0"
+        className="max-w-[490px] md:mb-9 mt-1 mb-5 mx-2 dark:text-black text-white/80 xl:mx-0"
         ref={descriptionRef}
       >
       </p>
