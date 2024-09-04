@@ -12,8 +12,8 @@ const Cursor = ({ theme }) => {
     (e) => {
       if (isTouch) return;
       const { clientX, clientY } = e;
-      const cursorX = clientX - cursorRef.current.offsetWidth / 2;
-      const cursorY = clientY - cursorRef.current.offsetHeight / 2;
+      const cursorX = clientX + cursorRef.current.offsetWidth / 7;
+      const cursorY = clientY + cursorRef.current.offsetHeight / 7;
       gsap.to(cursorRef.current, {
         x: cursorX,
         y: cursorY,
@@ -75,7 +75,7 @@ const Cursor = ({ theme }) => {
     touchQuery.addListener(handleTouchChange);
 
     if (!touchQuery.matches) {
-      document.body.style.cursor = "none";
+      //document.body.style.cursor = "none";
       document.addEventListener("mousemove", onMouseMove);
 
       const cleanup = initializeCursor();
