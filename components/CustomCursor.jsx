@@ -75,7 +75,7 @@ const Cursor = ({ theme }) => {
     touchQuery.addListener(handleTouchChange);
 
     if (!touchQuery.matches) {
-      //document.body.style.cursor = "none";
+      document.body.style.cursor = "none";
       document.addEventListener("mousemove", onMouseMove);
 
       const cleanup = initializeCursor();

@@ -14,6 +14,7 @@ export default function Document() {
         <meta name="description" content="Fullstack excelence" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="theme-color" content="var(--bg-color)" />
+        <meta name="google-site-verification" content="yAWB7hoSKHCU-0UfXKd-EV_t1h1yBUgs_lge1Ub0LZo" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <body>

@@ -22,21 +22,7 @@ const Photo = memo(() => {
         }
       });
     }
-  }, [isDarkMode]);
-
-  const loadSVG = useCallback(async () => {
-    try {
-      const response = await fetch("/assets/tsrun.svg");
-      const svgText = await response.text();
-      if (svgRef.current) {
-        svgRef.current.innerHTML = svgText;
-        applyTheme();
-        animateSVG();
-      }
-    } catch (error) {
-      console.error("Error loading SVG:", error);
-    }
-  }, [applyTheme]);
+  }, [isDarkMode]); 
 
   const animateSVG = useCallback(() => {
     const timeline = gsap.timeline();
@@ -78,6 +64,20 @@ const Photo = memo(() => {
       }
     });
   }, []);
+
+  const loadSVG = useCallback(async () => {
+    try {
+      const response = await fetch("/assets/tsrun.svg");
+      const svgText = await response.text();
+      if (svgRef.current) {
+        svgRef.current.innerHTML = svgText;
+        applyTheme();
+        animateSVG();
+      }
+    } catch (error) {
+      console.error("Error loading SVG:", error);
+    }
+  }, [applyTheme,animateSVG]);
 
   useEffect(() => {
     loadSVG();

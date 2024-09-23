@@ -4,12 +4,12 @@
   "description": "Revalla Tarun Portfolio Website, a passionate full-stack web developer with a focus on creating user-centered experiences.",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/media/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/media/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -21,17 +21,17 @@
   "orientation": "portrait",
   "screenshots": [
     {
-      "src": "/screenshot-desktop.png",
+      "src": "/media/screenshot-desktop.png",
       "sizes": "1451x848",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Homescreen of My App"
+      "label": "Homescreen"
     },
     {
-      "src": "/screenshot-mobile.png",
+      "src": "/media/screenshot-mobile.png",
       "sizes": "412x915",
       "type": "image/png",
-      "label": "Mobile homescreen of My App"
+      "label": "Homescreen"
     }
   ],
   "shortcuts": [
@@ -40,13 +40,13 @@
       "url": "/",
       "icons": [
         {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192",
+          "src": "/media/home.png",
+          "sizes": "512x512",
           "type": "image/png"
         },
         {
-          "src": "/android-chrome-512x512.png",
-          "sizes": "512x512",
+          "src": "/media/homes.png",
+          "sizes": "192x192",
           "type": "image/png"
         }
       ]
@@ -56,13 +56,13 @@
       "url": "/about",
       "icons": [
         {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192",
+          "src": "/media/about.png",
+          "sizes": "512x512",
           "type": "image/png"
         },
         {
-          "src": "/android-chrome-512x512.png",
-          "sizes": "512x512",
+          "src": "/media/abouts.png",
+          "sizes": "192x192",
           "type": "image/png"
         }
       ]
@@ -72,13 +72,13 @@
       "url": "/contact",
       "icons": [
         {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192",
+          "src": "/media/contact.png",
+          "sizes": "512x512",
           "type": "image/png"
         },
         {
-          "src": "/android-chrome-512x512.png",
-          "sizes": "512x512",
+          "src": "/media/contacts.png",
+          "sizes": "192x192",
           "type": "image/png"
         }
       ]
@@ -88,13 +88,13 @@
       "url": "/services",
       "icons": [
         {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192",
+          "src": "/media/work.png",
+          "sizes": "512x512",
           "type": "image/png"
         },
         {
-          "src": "/android-chrome-512x512.png",
-          "sizes": "512x512",
+          "src": "/media/works.png",
+          "sizes": "192x192",
           "type": "image/png"
         }
       ]
